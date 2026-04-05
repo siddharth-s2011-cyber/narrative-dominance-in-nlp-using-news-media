@@ -1,0 +1,330 @@
+/* ── Fonts ─────────────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── Global ─────────────────────────────────────────────────────────────────── */
+html, body, [class*="css"] {
+    background-color: #0a0a0f !important;
+    color: #e8e8f0 !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+#MainMenu, footer, header { visibility: hidden; }
+
+/* ── Header ──────────────────────────────────────────────────────────────────── */
+.nm-header {
+    padding: 2rem 0 1.5rem;
+    border-bottom: 1px solid #1e1e2e;
+    margin-bottom: 1.5rem;
+}
+.nm-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #e8e8f0;
+}
+.nm-title span { color: #e8c86d; }
+.nm-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #5a5a7a;
+    margin-top: 0.4rem;
+}
+
+/* ── Info box ─────────────────────────────────────────────────────────────────── */
+.info-box {
+    background: rgba(124, 110, 245, 0.07);
+    border: 1px solid rgba(124, 110, 245, 0.2);
+    border-radius: 6px;
+    padding: 0.7rem 1.1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.68rem;
+    color: #9090d0;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Stats row ────────────────────────────────────────────────────────────────── */
+.stat-row {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #1e1e2e;
+}
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.12rem;
+}
+.stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e8c86d;
+    line-height: 1;
+}
+.stat-lbl {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #5a5a7a;
+}
+
+/* ── Section titles ───────────────────────────────────────────────────────────── */
+.section-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #5a5a7a;
+    margin: 1.8rem 0 0.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #1e1e2e;
+}
+
+/* ── NDS cards ────────────────────────────────────────────────────────────────── */
+.nds-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+.nds-card {
+    background: #111118;
+    border: 1px solid #1e1e2e;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    flex: 1;
+    min-width: 155px;
+    position: relative;
+    overflow: hidden;
+}
+.nds-card.dominant {
+    border-color: rgba(232, 200, 109, 0.35);
+    background: #151208;
+}
+.nds-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+}
+.nds-crown {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.55rem;
+    color: #e8c86d;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.3rem;
+}
+.nds-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #e8e8f0;
+    margin-bottom: 0.4rem;
+}
+.nds-score {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.nds-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: #5a5a7a;
+    line-height: 1.9;
+}
+.nds-meta span { color: #9090b0; }
+.nds-bar-track {
+    height: 3px;
+    background: #1e1e2e;
+    border-radius: 2px;
+    margin-top: 0.7rem;
+}
+.nds-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+}
+
+/* ── Legend ───────────────────────────────────────────────────────────────────── */
+.legend {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+}
+.legend-lbl {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: #5a5a7a;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: #e8e8f0;
+}
+.legend-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+/* ── Article cards ────────────────────────────────────────────────────────────── */
+.card {
+    background: #111118;
+    border: 1px solid #1e1e2e;
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+.card:hover { border-color: #2e2e45; }
+.card-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+}
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0 0.6rem;
+}
+.card-source {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #5a5a7a;
+}
+.card-badges {
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+}
+.card-badge {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.57rem;
+    padding: 0.15rem 0.42rem;
+    border-radius: 2px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    color: #e8e8f0;
+    margin-bottom: 0.45rem;
+}
+.card-text {
+    font-size: 0.76rem;
+    line-height: 1.6;
+    color: #5a5a7a;
+    margin-bottom: 0.65rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.conf-track {
+    height: 2px;
+    background: #1e1e2e;
+    border-radius: 1px;
+    margin-bottom: 0.6rem;
+}
+.conf-fill { height: 100%; border-radius: 1px; }
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.58rem;
+    color: #3a3a5a;
+}
+.card-link a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    color: #7c6ef5;
+    text-decoration: none;
+}
+
+/* ── Streamlit input overrides ────────────────────────────────────────────────── */
+.stTextInput > div > div > input {
+    background: #111118 !important;
+    border: 1px solid #1e1e2e !important;
+    color: #e8e8f0 !important;
+    border-radius: 4px !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+.stTextInput > div > div > input:focus {
+    border-color: #7c6ef5 !important;
+    box-shadow: none !important;
+}
+.stButton > button {
+    background: #e8c86d !important;
+    color: #0a0a0f !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-family: 'IBM Plex Mono', monospace !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.05em !important;
+    padding: 0.55rem 1.5rem !important;
+}
+.stButton > button:hover { opacity: 0.85 !important; }
+
+/* ── Error box ────────────────────────────────────────────────────────────────── */
+.err-box {
+    background: rgba(220, 80, 80, 0.07);
+    border: 1px solid rgba(220, 80, 80, 0.25);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: #e07070;
+    white-space: pre-wrap;
+}
+
+/* ── Empty state ──────────────────────────────────────────────────────────────── */
+.empty-state {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+.empty-state .icon {
+    font-size: 3rem;
+    opacity: 0.12;
+}
+.empty-state p {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #5a5a7a;
+    margin-top: 1rem;
+}
+.empty-state small {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    color: #3a3a5a;
+    line-height: 2;
+}

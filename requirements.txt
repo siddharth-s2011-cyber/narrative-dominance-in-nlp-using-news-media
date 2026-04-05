@@ -1,0 +1,15 @@
+numpy~=2.4.2
+pandas~=2.3.3
+requests~=2.32.5
+joblib~=1.5.3
+fastapi~=0.135.2
+sentence-transformers~=5.2.2
+scikit-learn~=1.8.0
+pydantic_core~=2.41.5
+streamlit~=1.55.0
+plotly~=6.6.0
+feedparser~=6.0.12
+vaderSentiment~=3.3.2
+bs4~=0.0.2
+beautifulsoup4~=4.14.3
+pydantic_core~=2.41.5
