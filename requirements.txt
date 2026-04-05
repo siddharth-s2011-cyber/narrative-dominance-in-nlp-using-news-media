@@ -13,3 +13,5 @@ vaderSentiment~=3.3.2
 bs4~=0.0.2
 beautifulsoup4~=4.14.3
 pydantic_core~=2.41.5
+
+pydantic_core~=2.41.5

@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 #page config
 st.set_page_config(page_title="NarrativeMap", page_icon="◈", layout="wide")
-BACKEND = "https://narrativemap-backend.onrender.com"
+BACKEND = "http://localhost:8000"
 CLUSTER_COLORS = {
     0: "#e8c86d",
     1: "#7c6ef5",
