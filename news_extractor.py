@@ -1,9 +1,4 @@
 
-
-"""
-->still working on the prediction model using logistic regression for demo purposes using vader for sentiment analysis
-->this code is base for news extraction and kmeans clusteringl
-"""
 import re
 from urllib.parse import quote
 import feedparser
